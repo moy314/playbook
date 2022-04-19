@@ -78,7 +78,7 @@ class Ajolonauta {
   }
 
   // Podemos acceder a los atributos de esta clase
-  get getExercisesCompleted() {
+  get getExercisesCompleted() {//IMPORTANTE NOTAS EL USO DE LA PALABRA RESERVADA GET
 		return this.exercises_completed
   }
 }
