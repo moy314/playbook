@@ -10,6 +10,12 @@ class Spiderman{
 
     }
 
+    getInfo(){
+
+        return `hey i'm ${this.actor} from ${this.estudioCine}`
+
+    }
+
 
 }
 module.exports = Spiderman
