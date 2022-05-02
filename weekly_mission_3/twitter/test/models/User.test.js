@@ -38,3 +38,20 @@ describe("unit test for getters", () => {
 
     });
 })
+
+
+describe("pruebas para set",() =>{
+
+    test('add new user', ()=>{
+
+        const user = new User(1,"moycas","moy","bio1");
+        user.setUsername = 'moicas';
+        expect(user.username).toBe('moicas');
+
+        user.setBio = 'new bio';
+        expect(user.bio).toBe('new bio');
+    })
+
+
+
+})
