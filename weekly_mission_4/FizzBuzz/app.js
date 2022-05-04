@@ -30,6 +30,17 @@ console.log(ExplorerService.getExplorersUsernamesByMission(explorers, "node"));
 // Score: 4, Trick: 4.
 // Score: 5, Trick: 5.
 
+const FizzbuzzService = require('./lib/services/FizzbuzzService');
+
+const explorer1 = {name: "Explorer1", score: 2}
+console.log(FizzbuzzService.applyValidationInExplorer(explorer1))
+
+
+
+
+
+
+
 const assignFizzTrick = function(explorer){
     if(explorer.score % 3 === 0){
         explorer.trick = "FIZZ";
@@ -39,6 +50,18 @@ const assignFizzTrick = function(explorer){
         return explorer;
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
 
 const explorersInNodeAndFizzTrick = explorersInNode.map((explorer) => assignFizzTrick(explorer));
 
